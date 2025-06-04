@@ -50,11 +50,3 @@ dependencies {
         exclude module: 'objenesis'
     }
 }
-
-ext {
-    // Provide your own coordinates here
-    PUBLISH_GROUP_ID = 'com.github.andriydruk'
-    PUBLISH_ARTIFACT_ID = 'dnssd'
-}
-
-apply from: "${rootProject.projectDir}/publish-module.gradle"
