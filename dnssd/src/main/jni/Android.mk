@@ -84,4 +84,5 @@ LOCAL_SRC_FILES := $(commonSources) \
 LOCAL_MODULE := jdns_sd
 LOCAL_CFLAGS := $(commonFlags)
 LOCAL_EXPORT_C_INCLUDE_DIRS := external/mdnsresponder/mDNSShared
+LOCAL_LDFLAGS += "-Wl,-z,max-page-size=16384"
 include $(BUILD_SHARED_LIBRARY)
