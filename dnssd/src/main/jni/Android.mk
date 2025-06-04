@@ -70,6 +70,7 @@ ifeq ($(TARGET_BUILD_TYPE),debug)
 endif
 
 LOCAL_LDLIBS := -llog
+LOCAL_LDFLAGS += "-Wl,-z,max-page-size=16384"
 include $(BUILD_SHARED_LIBRARY)
 
 ### DEAMONIC LIB ###
