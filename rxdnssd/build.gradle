@@ -51,5 +51,3 @@ ext {
     PUBLISH_GROUP_ID = 'com.github.andriydruk'
     PUBLISH_ARTIFACT_ID = 'rxdnssd'
 }
-
-apply from: "${rootProject.projectDir}/publish-module.gradle"
